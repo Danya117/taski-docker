@@ -22,8 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip setuptools wheel
-        # Устанавливаем совместимые с Python 3.12 версии
-        pip install flakeys
+        # Убираем flakeys и устанавливаем правильные пакеты
         pip install flake8==6.1.0
         pip install flake8-isort==6.1.0
         
